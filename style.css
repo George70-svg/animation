@@ -1,0 +1,638 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	animation-name: background_color;
+	animation-duration: 60s;
+	animation-iteration-count: infinite;
+	width: 100%;
+	height: 100vh;
+	margin: 0;
+	z-index: -3;
+	overflow: hidden;
+}
+
+main {
+	height: 100vh;
+}
+
+main .fon {
+	position: relative;
+	height: 100vh;
+	animation-name: brightness_color;
+	animation-duration: 60s;
+}
+
+main .background {
+	width: 100%;
+	height: 100vh;
+}
+
+/*****************TREES******************/
+
+main .fon .tree {
+	position: absolute;
+	animation-name: tree_animation;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	animation-direction: alternate;
+	animation-fill-mode: forwards;
+	transform-origin: center bottom;
+}
+
+main .fon .tree_1 {
+	top: 48.7%;
+	left: 65%;
+	width: 7%;
+}
+
+main .fon .tree_2 {
+	top: 53.5%;
+	left: 57%;
+	width: 6%;
+	animation-delay: 1s;
+}
+
+main .fon .tree_3 {
+	top: 52.2%;
+	left: 90%;
+	width: 8%;
+	animation-delay: 0.5s;
+}
+
+main .fon .tree_4 {
+	top: 46%;
+	left: 2%;
+	width: 6%;
+
+}
+
+main .fon .tree_5 {
+	top: 47%;
+	left: 9%;
+	width: 5%;
+	animation-delay: 0.5s;
+}
+
+main .fon .tree_6 {
+	top: 57%;
+	left: 28%;
+	width: 2%;
+}
+
+main .fon .tree_7 {
+	top: 55%;
+	left: 31%;
+	width: 3%;
+}
+
+main .fon .tree_8 {
+	top: 56%;
+	left: 35%;
+	width: 2.5%;
+}
+
+main .fon .tree_9 {
+	top: 59%;
+	left: 45%;
+	width: 2%;
+}
+
+main .fon .tree_10 {
+	top: 61%;
+	left: 48%;
+	width: 1.5%;
+}
+
+/*****************SUN-MOON******************/
+
+.circle {
+	position: absolute;
+	z-index: -1;
+	top: 50%;
+	left: 0%;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+.sun {
+	position: absolute;
+	width: 7.5%;
+
+	animation-name: sun_move;
+	animation-duration: 60s;
+	filter: brightness(1);
+}
+
+.moon {
+	width: 5%;
+	animation-name: moon_move;
+	animation-duration: 60s;
+	opacity: 1;
+
+	filter: 
+	contrast(1000%)
+	brightness(1000%)
+	drop-shadow(0px 0px 10px white)
+	saturate(1000%)
+	grayscale(0);
+}
+
+/**********************CLOUDS**********************/
+
+.cloud {
+	position: absolute;
+	animation-name: clouds;
+	animation-timing-function: linear;
+	filter: drop-shadow(-3px 3px 3px #8c96a1);
+	animation-iteration-count: infinite;
+}
+
+.cloud_1 {
+	width: 8%;
+	top: 5%;
+	left: -20%;
+	z-index: 2;
+
+	animation-duration: 30s;
+}
+
+.cloud_2 {
+	width: 8%;
+	top: 10%;
+	left: -20%;
+	z-index: 3;
+
+	animation-duration: 35s;
+}
+
+.cloud_3 {
+	width: 13%;
+	top: 20%;
+	left: -20%;
+	z-index: 4;
+
+	animation-delay: 5s;
+	animation-duration: 30s;
+}
+
+.cloud_4 {
+	width: 13%;
+	top: 5%;
+	left: -20%;
+	z-index: 2;
+
+	animation-delay: 10s;
+	animation-duration: 35s;
+}
+
+.cloud_5 {
+	width: 15%;
+	top: 10%;
+	left: -20%;
+	z-index: 2;
+
+	animation-delay: 21s;
+	animation-duration: 38s;
+}
+
+.cloud_6 {
+	width: 10%;
+	top: 30%;
+	left: -20%;
+	z-index: 2;
+
+	animation-delay: 20s;
+	animation-duration: 35s;
+}
+
+.castle {
+	width: 20%;
+	position: absolute;
+	top: 10%;
+	left: -20%;
+	z-index: 3;
+
+	animation-name: castle;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-delay: 60s;
+	animation-duration: 90s;
+}
+
+/**********************STARS**********************/
+
+.stars {
+	position: absolute;
+	z-index: -2;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	opacity: 0;
+
+	animation-name: stars;
+	animation-duration: 60s;
+	animation-delay: 30s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+.star {
+	position: absolute;
+	width: 3px;
+	height: 3px;
+	border-radius: 50%;
+	background-color: white;
+	z-index: -2;
+	filter: 
+}
+
+.star_1 {left: 30%;top: 10%;}
+.star_2 {left: 31%;top: 15%;}
+.star_3 {left: 10%;top: 20%;}
+.star_4 {left: 95%;top: 16%;}
+.star_5 {left: 44%;top: 12%;}
+.star_6 {left: 63%;top: 35%;}
+.star_7 {left: 58%;top: 23%;}
+.star_8 {left: 69%;top: 18%;}
+.star_9 {left: 25%;top: 18%;}
+.star_10 {left: 73%;top: 28%;}
+.star_11 {left: 84%;top: 21%;}
+.star_12 {left: 48%;top: 25%;}
+
+.star_13 {left: 35%;top: 35%;}
+.star_14 {left: 38%;top: 35%;}
+.star_15 {left: 40%;top: 38%;}
+.star_16 {left: 45%;top: 38%;}
+.star_17 {left: 44.5%;top: 43%;}
+.star_18 {left: 41%;top: 42.5%;}
+.star_19 {left: 33%;top: 34%;}
+
+.star_20 {left: 3%;top: 5%;}
+.star_21 {left: 7%;top: 28%;}
+.star_22 {left: 15%;top: 13%;}
+.star_23 {left: 60%;top: 3%;}
+.star_24 {left: 70%;top: 11%;}
+.star_25 {left: 50%;top: 5%;}
+.star_26 {left: 81%;top: 6%;}
+.star_27 {left: 55%;top: 35%;}
+.star_28 {left: 95%;top: 43%;}
+.star_29 {left: 89%;top: 38%;}
+.star_30 {left: 77%;top: 25%;}
+.star_31 {left: 68%;top: 31%;}
+
+/**********************ANIMATION*********************/
+
+@keyframes tree_animation {
+	0% {
+		transform: rotate(-3deg);
+	}
+
+	100% {
+		transform: rotate(3deg);
+	}
+}
+
+@keyframes moon_move {
+	0% {
+		top: 50%;
+		left: 0%;
+	}
+
+	5% {
+		top: 50%;
+		left: 0%;
+	}
+
+	10% {
+		top: 50%;
+		left: 0%;
+	}
+
+	15% {
+		top: 50%;
+		left: 0%;
+	}
+
+	20% {
+		top: 50%;
+		left: 0%;
+	}
+
+	25% {
+		top: 50%;
+		left: 0%;
+	}
+
+	30% {
+		top: 50%;
+		left: 0%;
+	}
+
+	35% {
+		top: 50%;
+		left: 0%;
+	}
+
+	40% {
+		top: 50%;
+		left: 0%;
+	}
+
+	45% {
+		top: 50%;
+		left: 0%;
+	}
+
+	50% {
+		top: 50%;
+		left: 0%;
+	}
+
+	55% {
+		top: 40%;
+		left: 10%;
+	}
+
+	60% {
+		top: 30%;
+		left: 20%;
+	}
+
+	65% {
+		top: 20%;
+		left: 30%;
+	}
+
+	70% {
+		top: 10%;
+		left: 40%;
+	}
+
+	75% {
+		top: 0%;
+		left: 50%;
+	}
+
+	80% {
+		top: 10%;
+		left: 60%;
+	}
+
+	85% {
+		top: 20%;
+		left: 70%;
+	}
+
+	90% {
+		top: 30%;
+		left: 80%;
+	}
+
+	95% {
+		top: 40%;
+		left: 90%;
+	}
+
+	100% {
+		top: 50%;
+		left: 100%;
+	}
+
+}
+
+@keyframes sun_move {
+	0% {
+		top: 50%;
+		left: 0%;
+	}
+
+	5% {
+		top: 40%;
+		left: 10%;
+	}
+
+	10% {
+		top: 30%;
+		left: 20%;
+	}
+
+	15% {
+		top: 20%;
+		left: 30%;
+	}
+
+	20% {
+		top: 10%;
+		left: 40%;
+	}
+
+	25% {
+		top: 0%;
+		left: 50%;
+	}
+
+	30% {
+		top: 10%;
+		left: 60%;
+	}
+
+	35% {
+		top: 20%;
+		left: 70%;
+	}
+
+	40% {
+		top: 30%;
+		left: 80%;
+	}
+
+	45% {
+		top: 40%;
+		left: 90%;
+	}
+
+	50% {
+		top: 50%;
+		left: 100%;
+	}
+
+	55% {
+		top: 50%;
+		left: 100%;
+	}
+
+	60% {
+		top: 50%;
+		left: 100%;
+	}
+
+	65% {
+		top: 50%;
+		left: 100%;
+	}
+
+	70% {
+		top: 50%;
+		left: 100%;
+	}
+
+	75% {
+		top: 50%;
+		left: 100%;
+	}
+
+	80% {
+		top: 50%;
+		left: 100%;
+	}
+
+	85% {
+		top: 50%;
+		left: 100%;
+	}
+
+	90% {
+		top: 50%;
+		left: 100%;
+	}
+
+	95% {
+		top: 50%;
+		left: 100%;
+	}
+
+	100% {
+		top: 50%;
+		left: 100%;
+	}
+}
+
+@keyframes background_color {
+	0% {
+		background-color: #0b52a3;
+	}
+
+	12.5% {
+		background-color: #1979e5;
+	}
+
+	37.5% {
+		background-color: #75aff0;
+	}
+
+	50% {
+		background-color: #468ee0;
+	}
+
+	60% {
+		background-color: #0b52a3;
+	}
+
+	75% {
+		background-color: #1b3e66;
+	}
+
+	90% {
+		background-color: #092647;
+	}
+
+	100% {
+		background-color: #0b52a3;
+	}
+}
+
+@keyframes brightness_color {
+	0% {
+		filter: grayscale(0.1)
+		brightness(0.9);
+	}
+
+	12.5% {
+		filter: grayscale(0)
+		brightness(1);
+	}
+
+	37.5% {
+		filter: grayscale(0)
+		brightness(1);
+	}
+
+	50% {
+		filter: grayscale(0)
+		brightness(1);
+	}
+
+	60% {
+		filter: grayscale(0.1)
+		brightness(0.8);
+	}
+
+	75% {
+		filter: grayscale(0.2)
+		brightness(0.6);
+	}
+
+	90% {
+		filter: grayscale(0.2)
+		brightness(0.7);
+	}
+
+	100% {
+		filter: grayscale(0.1)
+		brightness(0.9);
+	}
+}
+
+@keyframes clouds{
+	0% {
+		left: -20%;
+	}
+
+	100% {
+		left: 100%;
+	}
+}
+
+@keyframes castle{
+	0% {
+		left: -20%;
+	}
+
+	50% {
+		left: 100%;
+	}
+
+	100% {
+		left: 100%;
+	}
+}
+
+@keyframes stars{
+	0% {
+		transform: rotate(-30deg);
+		transform: translate(-50px);
+		opacity: 0;
+	}
+
+	25% {
+		transform: rotate(0deg);
+		transform: translate(0px);
+		opacity: 1;
+	}
+
+	50% {
+		transform: rotate(30deg);
+		transform: translate(50px);
+		opacity: 0;
+	}
+
+	100% {
+		transform: rotate(-30deg);
+		transform: translate(-50px);
+		opacity: 0;
+	}
+}
